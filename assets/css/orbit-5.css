@@ -25,7 +25,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #a85502;
+  color: #d95c0f;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -40,7 +40,7 @@ p {
 }
 
 .wrapper {
-  background: #FDA246;
+  background: #fc783a;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
@@ -254,7 +254,7 @@ p {
   background-clip: padding-box;
 }
 .skillset .theme-progress-bar {
-  background: #febb78;
+  background: #3955f7;
 }
 
 .footer {
@@ -263,11 +263,11 @@ p {
 }
 .footer .copyright {
   line-height: 1.6;
-  color: #545E6C;
+  color: #3955f7;
   font-size: 13px;
 }
 .footer .fa-heart {
-  color: #fb866a;
+  color: #3955f7;
 }
 
 @media (max-width: 767.98px) {
