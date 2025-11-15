@@ -3,69 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook - Más que Gráficos</title>
+    <title>Más que Gráficos - Ebook</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 
-    <!-- Iconos -->
+    <!-- FontAwesome -->
     <script defer src="assets/fontawesome/js/all.min.js"></script>
 
-    <!-- Estilo general de tu plantilla -->
+    <!-- Tema Orbit -->
     <link id="theme-style" rel="stylesheet" href="assets/css/orbit-5.css">
 
     <style>
-        /* Contenedor principal */
+        body {
+            background: #f4f4f4;
+        }
+
         .ebook-container {
-            max-width: 950px;
+            max-width: 900px;
             margin: 40px auto;
             background: white;
-            padding: 40px;
+            padding: 35px;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
 
-        /* Título */
-        .ebook-title {
+        h1 {
+            text-align: center;
             font-size: 2rem;
             font-weight: 700;
-            text-align: center;
             margin-bottom: 10px;
-            color: #333;
         }
 
-        /* Subtítulo */
-        .ebook-subtitle {
+        .subtitle {
             text-align: center;
-            color: #777;
+            color: #666;
             margin-bottom: 25px;
-            font-size: 1.1rem;
         }
 
-        /* Botones */
         .ebook-buttons {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
-        .ebook-buttons a {
-            padding: 10px 20px;
-            border-radius: 8px;
-        }
-
-        /* Visor incrustado */
-        .pdf-viewer {
+        iframe {
             width: 100%;
             height: 800px;
             border: 2px solid #ddd;
             border-radius: 8px;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .pdf-viewer {
+            iframe {
                 height: 500px;
             }
         }
@@ -74,24 +65,27 @@
 <body>
 
 <div class="ebook-container">
-    
-    <h1 class="ebook-title">Más que Gráficos</h1>
-    <p class="ebook-subtitle">El Arte de Balancear Estilo y Función</p>
 
+    <h1>Más que Gráficos</h1>
+    <p class="subtitle">El Arte de Balancear Estilo y Función</p>
+
+    <!-- Botones -->
     <div class="ebook-buttons">
-        <!-- Botón de abrir online (este mismo archivo ya es la vista online) -->
-        <a href="docs/MasQueGraficos.pdf" target="_blank" class="btn btn-secondary">
+        <a href="docs/Más que Gráficos - El Arte de Balancear Estilo y Función.pdf" 
+           target="_blank" 
+           class="btn btn-secondary">
             <i class="fa-solid fa-book-open"></i> Abrir en pestaña nueva
         </a>
 
-        <!-- Botón de descarga -->
-        <a href="docs/MasQueGraficos.pdf" download class="btn btn-primary">
+        <a href="docs/Más que Gráficos - El Arte de Balancear Estilo y Función.pdf" 
+           download 
+           class="btn btn-primary">
             <i class="fa-solid fa-download"></i> Descargar PDF
         </a>
     </div>
 
-    <!-- Visor del PDF -->
-    <iframe class="pdf-viewer" src="docs/MasQueGraficos.pdf"></iframe>
+    <!-- Visor -->
+    <iframe src="docs/Más que Gráficos - El Arte de Balancear Estilo y Función.pdf"></iframe>
 
 </div>
 
